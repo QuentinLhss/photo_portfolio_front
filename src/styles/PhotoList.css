@@ -1,0 +1,32 @@
+.gallery-wrapper {
+  padding: 40px 20px;
+  margin-top: -130px;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  width: auto;
+}
+
+.masonry-column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.masonry-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=PhotoList.css.map */
