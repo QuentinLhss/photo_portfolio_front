@@ -1,0 +1,119 @@
+.pics-presentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: nowrap;
+}
+
+.hugePic {
+  position: relative;
+  width: 367px;
+  height: 565px;
+  flex-shrink: 0;
+}
+
+.smallPicHorizon {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.smallPicHorizon:nth-child(1) {
+  width: 231px;
+  height: 153px;
+}
+
+.smallPicHorizon:nth-child(2) {
+  width: 230px;
+  height: 153px;
+}
+
+.smallPicHorizon:nth-child(3) {
+  width: 102px;
+  height: 153px;
+}
+
+.smallPicHorizon:nth-child(4) {
+  width: 234px;
+  height: 155px;
+}
+
+.smallPicVertical {
+  width: 102px;
+  height: 153px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rowHorizontal {
+  width: 564px;
+  height: 396px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rowVertical {
+  width: 264px;
+  height: 396px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+img,
+.pics-presentation :global(img) {
+  object-fit: cover;
+  display: block;
+}
+
+img:hover {
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  .pics-presentation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hugePic {
+    display: none;
+  }
+  .smallPicHorizon:nth-child(1),
+  .smallPicHorizon:nth-child(2),
+  .smallPicHorizon:nth-child(4) {
+    width: 120px;
+    height: 80px;
+  }
+  .smallPicVertical {
+    width: 60px;
+    height: 90px;
+  }
+  .rowHorizontal {
+    width: 300px;
+    height: 200px;
+  }
+  .rowVertical {
+    width: 130px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=PicsPresentation.css.map */
