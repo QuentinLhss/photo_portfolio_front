@@ -9,6 +9,10 @@ import Tilt from 'react-parallax-tilt';
 import Masonry from 'react-masonry-css';
 
 export default function PhotoList({ pictures }) {
+    if (pictures === null){
+        pictures=[]
+    }
+
     const { openLightbox, Lightbox } = useLightbox();
 
     const flatPictures = pictures.flatMap(entry => entry.Pictures || []);
@@ -43,7 +47,6 @@ export default function PhotoList({ pictures }) {
                                     height={img.height}
                                     alt={`thumbnail-${index}`}
                                     className="image-cover"
-                                    layout="responsive"
                                 />
                             </Tilt>
                         </div>
