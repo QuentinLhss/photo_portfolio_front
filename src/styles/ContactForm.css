@@ -55,5 +55,10 @@
 .form button:hover {
   background-color: #cfcfcf;
 }
+@media screen and (max-width: 650px) {
+  .form .inputGroup {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=ContactForm.css.map */

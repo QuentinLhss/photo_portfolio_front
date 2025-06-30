@@ -60,4 +60,10 @@
       background-color: #cfcfcf;
     }
   }
+  
+  @media screen and (max-width: 650px) {
+    .inputGroup{
+      flex-direction: column;
+    }
+  }
 }

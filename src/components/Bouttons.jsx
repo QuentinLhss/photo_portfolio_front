@@ -15,7 +15,7 @@ export default function Bouttons() {
             </motion.div>
             <motion.div whileHover={{scale: 1.1}}
                         whileTap={{scale: 0.9}}>
-                <button onClick={() => router.push("/contact")}>Me contacter</button>
+               <a href="mailto:qlahousse@gmail.com"><button>Me contacter</button></a>
             </motion.div>
         </div>
 );
